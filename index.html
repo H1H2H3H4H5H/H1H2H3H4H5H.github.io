@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners -->
+  <meta name="description" content="From Seeing to Experiencing: Scaling Navigation Foundation Models with Reinforcement Learning">
+  <meta property="og:title" content="From Seeing to Experiencing: Scaling Navigation Foundation Models with Reinforcement Learning"/>
+  <meta property="og:description" content="From Seeing to Experiencing: Scaling Navigation Foundation Models with Reinforcement Learning"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+  <meta name="twitter:title" content="From Seeing to Experiencing: Scaling Navigation Foundation Models with Reinforcement Learning">
+  <meta name="twitter:description" content="From Seeing to Experiencing: Scaling Navigation Foundation Models with Reinforcement Learning">
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="keywords" content="Urban Navigation, Foundation Models, Reinforcement Learning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>From Seeing to Experiencing: Scaling Navigation Foundation Models with Reinforcement Learning</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <!-- Custom Styles from your HTML -->
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Header styling */
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      margin-top: 30px;
+      color: #2C3E50;
+    }
+
+    h3 {
+      font-size: 2.2em;
+      margin-bottom: 20px;
+      color: #2C3E50;
+      text-align: center;
+    }
+
+    p {
+      line-height: 1.6;
+      margin: 10px 0;
+    }
+
+    /* Research Section */
+    .research-section {
+      margin: 50px auto;
+      padding: 30px;
+      max-width: 1200px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Custom heading style */
+    .custom-heading {
+      font-size: 1.8em;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    /* Image Styling */
+    .white-background {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+
+    .white-background img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Responsive Video Container */
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0;
+      margin-bottom: 30px;
+    }
+
+    .video-container video,
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Video Grid */
+    .video-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(512px, 1fr));
+        gap: 1.2rem;
+        justify-items: center;        /* */
+        text-align: center;           /* caption */
+      }
+
+    .video-grid video {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      max-width: 512px;
+    }
+
+    /* Adjustments for mobile view */
+    @media (max-width: 768px) {
+      .video-grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 2.2em;
+      }
+
+      h3 {
+        font-size: 1.8em;
+      }
+    }
+
+    /* Link and hover styling */
+    a {
+      color: #2980B9;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* GIF Styling */
+    .gif img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Code Section for copy buttons */
+    .code-section {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    .copy-button {
+      background-color: #2C3E50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    .copy-button:hover {
+      background-color: #2980B9;
+    }
+  </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+  <!-- Hero Section with Title -->
+  <section class="hero is-light">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">From Seeing to Experiencing: Scaling Navigation Foundation Models with Reinforcement Learning
+            </h1>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Abstract Section -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            Navigation foundation models trained on massive web-scale data enable agents to generalize across diverse environments and embodiments. However, these models, which are trained solely on offline data, often lack the capacity to reason about the consequences of their actions or adapt through counterfactual understanding. They thus face significant limitations in the real-world urban navigation where interactive and safe behaviors, such as avoiding obstacles and moving pedestrians, are critical. To tackle these challenges, we introduce the Seeing-to-Experiencing (S2E) learning framework to scale the capability of navigation foundation models with reinforcement learning. S2E combines the strengths of pre-training on offline videos and post-training through reinforcement learning. It maintains the model's generalizability acquired from large-scale real-world videos while enhancing its interactivity through reinforcement learning in simulation environments. Specifically, we introduce two innovations:
+
+            an Anchor-Guided Distribution Matching strategy for offline pretraining, which stabilizes learning and models diverse motion patterns through anchor-based supervision; and
+            a Residual-Attention Module for reinforcement learning, which obtains reactive behaviors from simulation environments without erasing the model’s pretrained knowledge. Moreover, we establish a comprehensive end-to-end evaluation benchmark, NavBench-GS, built on photorealistic 3D Gaussian Splatting reconstructions of real-world scenes that incorporate physical interactions. It can systematically assess the generalizability and safety of navigation foundation models.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Video Section-Weather -->
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">1. Additional real-world navigation results</h2>
+        <p class="content">
+            Red lines denote the left and right sides of the wheeled robot at this moment, while
+            the green bar indicates the predicted future trajectory. Note that the predicted future trajectories exhibit the
+            capability of our model to follow sidewalks and avoid obstacles. (All videos are played at 3X speed.)
+          </p>
+        
+        <h3 class="title is-4">1.1 Robustness under different conditions with varying lighting</h3>
+        
+        <p class="content">
+            These results illustrate reliable navigation performance under varying weather and
+            lighting conditions, from cloudy and rainy scenes to harsh sunlight and nighttime
+            environments.
+          </p>
+
+        <div class="video-grid">
+          <video muted controls playsinline>
+            <source src="assets/Lightning_clean_01_noaudio.mp4" type="video/mp4">
+          </video>
+          <video muted controls playsinline>
+            <source src="assets/RainyNight_Clean_01.mp4" type="video/mp4">
+          </video>
+          <p class="content"><b>Early morning.</b></p>
+          <p class="content"><b>Rainy Night with glare.</b></p>
+          <video muted controls playsinline>
+            <source src="assets/Lightning_02_noaudio.mp4" type="video/mp4">
+          </video>
+          <video muted controls playsinline>
+            <source src="assets/Pedestrian_night_01_noaudio.mp4" type="video/mp4">
+          </video>
+          <p class="content"><b>Night (Obstacle avoidance).</b></p>
+          <p class="content"><b>Night (Pedestrian avoidance).</b></p>
+        </div>
+
+    <h3 class="title is-4">1.2 Collision avoidance with obstacles and pedestrians</h3>
+        
+        <p class="content">
+            These results illustrate reliable navigation performance in both obstacle avoidance
+  and pedestrian avoidance scenarios.
+          </p>
+
+        <div class="video-grid">
+            <video muted controls playsinline>
+                <source src="assets/Avoidance_01_noaudio.mp4" type="video/mp4">
+              </video>
+          <video muted controls playsinline>
+            <source src="assets/Avoidance_02_noaudio.mp4" type="video/mp4">
+          </video>
+          <p class="content"><b>Collision avoidance with unseen obstacle type (vehicle).</b></p>
+          <p class="content"><b>Collision avoidance with static infrastructures.</b></p>
+          <video muted controls playsinline>
+            <source src="assets/RainyNight_Avoidance_01_noaudio.mp4" type="video/mp4">
+          </video>
+          <video muted controls playsinline>
+            <source src="assets/Pedestrian_02_noaudio.mp4" type="video/mp4">
+          </video>
+          <p class="content"><b>Collision avoidance with vehicle and scooter.</b></p>
+          <p class="content"><b>Collision avoidance with dense pedestrian flow.</b></p>
+        </div>
+
+        <h2 class="title is-3">2. Failure modes</h2>
+        <p class="content">
+            We provide several typical failure modes encountered in real-world navigation,
+            including both control-level and decision-level issues. (All videos are played at 3X speed.)
+          </p>
+          <div class="video-grid">
+            <video muted controls playsinline>
+                <source src="assets/Collision_01_noaudio.mp4" type="video/mp4">
+              </video>
+          <video muted controls playsinline>
+            <source src="assets/Collision_02_noaudio.mp4" type="video/mp4">
+          </video>
+          <p class="content"><b>Collision caused by underestimating the robot width.</b></p>
+          <p class="content"><b>Controller-level failure.</b></p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+</body>
+</html>
